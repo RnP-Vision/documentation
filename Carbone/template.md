@@ -35,6 +35,8 @@
   - [Boucles](#boucles)
     - [Boucles sur un tableau](#boucles-sur-un-tableau)
     - [Boucles sur un objet](#boucles-sur-un-objet)
+    - [Boucles sur des images](#boucles-sur-des-images)
+    - [Set d'une variable](#set-dune-variable)
 
 ## Appeler le JSon
 
@@ -315,10 +317,16 @@ Pour un objet : { 'Cle1': 'Attribut1', 'Cle2': 'Attribut2', 'Cle3': 'Attribut3' 
     Cle3 Attribut3
 
 
-### Boucles sur des images
+### Boucles sur des images
 
-Insérer duex image qui serviront de `placeholder` et leur définir une `largeur`.
+Insérer deux image qui serviront de `placeholder` et leur définir une `largeur`.
 Il faut ensuite se rendre dans les `propriétés` des images et renseigner la variable contenant l'url : `{d.tableau[i]}` `{d.tableau[i+1]}` dans `Description`
 
 Fonctionne également avec les objets :
 `{d.objet[i].val}` `{d.objet[i+1]}`
+
+### Set d'une variable
+
+`{d.variable:ifEQ(condition):show(True):elseShow(False):set(d.boolean)}`
+
+La variable `d.boolean` contient désormais soit la valeur `True` soit la valeur `False` selon la condition
