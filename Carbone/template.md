@@ -7,6 +7,7 @@
   - [Lien documentation Carbone](#lien-documentation-carbone)
   - [Sommaire](#sommaire)
   - [Appeler le JSon](#appeler-le-json)
+    - [Tips et astuces](#tips-et-astuces)
   - [Conditions](#conditions)
     - [Particularité des chaines de caractères :](#particularité-des-chaines-de-caractères-)
     - [Valeurs vides : `ifEM()`](#valeurs-vides--ifem)
@@ -65,6 +66,12 @@
 ## Appeler le JSon
 
 Example d'appel du JSon : `{d.variable}`
+
+### Tips et astuces
+* `{#myAlias = d.wheels} {d.name} need {$myAlias} wheels!`
+  * Résultat = Cars need 4 wheels!
+* `{#mealOf($weekday) = d[weekday = $weekday]} Tuesday, we eat {$mealOf(2).name}.`
+  * Résultat = Tuesday, we eat fish.
 
 ## Conditions
 
